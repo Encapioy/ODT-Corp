@@ -30,6 +30,7 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 // Area Chart Example
 var ctx = document.getElementById("myOutcomeChart");
 var myLineChart = new Chart(ctx, {
+<<<<<<< HEAD
     type: 'line',
     data: {
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
@@ -48,6 +49,36 @@ var myLineChart = new Chart(ctx, {
             pointBorderWidth: 2,
             data: [0, 20000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
         }],
+=======
+  type: 'line',
+  data: {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    datasets: [{
+      label: "Earnings",
+      lineTension: 0.3,
+      backgroundColor: "rgba(28, 200, 138, 0.05)",
+      borderColor: "rgba(28, 200, 138, 1)",
+      pointRadius: 3,
+      pointBackgroundColor: "rgba(28, 200, 138, 1)",
+      pointBorderColor: "rgba(28, 200, 138, 1)",
+      pointHoverRadius: 3,
+      pointHoverBackgroundColor: "rgba(28, 200, 138, 1)",
+      pointHoverBorderColor: "rgba(28, 200, 138, 1)",
+      pointHitRadius: 10,
+      pointBorderWidth: 2,
+      data: [5000, 15000, 10000, 15000, 10000, 25000, 20000, 25000, 30000, 40000, 35000, 30000],
+    }],
+  },
+  options: {
+    maintainAspectRatio: false,
+    layout: {
+      padding: {
+        left: 10,
+        right: 25,
+        top: 25,
+        bottom: 0
+      }
+>>>>>>> 777a86754b957ab14fbcce3dffef73cf0d3285c0
     },
     options: {
         maintainAspectRatio: false,
